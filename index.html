@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MusicProject</title>
+    <link href="./resources/css/styles.css" rel="stylesheet" />
+    <script defer type="module" src="./resources/js/index.js"></script>
+    <!--
+    ->
+    <script src="https://kit.fontawesome.com/e7600ac8e5.js" crossorigin="anonymous"></script>
+  -->
+  </head>
+  <body class=" bg-no-repeat bg-cover justify-center min-h-screen items-center w-full-screen bg-background-i min-w-[300px]">
+   
+    
+
+    <div class=" justify min-h-screen flex flex-grow bg-[#ffffff20] backdrop-blur-sm" id="main-menu">
+      <div class=" hover:flex-row w-[16%] rounded-r-lg bg-[#1b18188e] justify-between flex-col min-w-52" id="main-menu">
+        
+        <div class=" text-5xl font-extrabold my-4 backdrop-blur-lg rounded-xl text-center" id="main-menu" >
+          <a href="#" class="bg-clip-text text-transparent bg-gradient-to-r from-red-300 to-slate-50">Fancy Music</a>
+        </div>
+        <div class="top-0 h-44 my-4 mx-4">
+          <button class="button rounded-lg h-12 text-center flex w-[100%] transition ease-in-out delay-150 border-solid border-red-400 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-600 duration-100 my-2" type="button" id="inicio">
+            <a href="#" aria-current="page" class="mx-8">Inicio</a>
+            </button>
+          <button class="button rounded-lg h-12 text-center flex w-[100%] transition ease-in-out delay-50 border-red-50 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-600 duration-100 my-2" type="button" id="canciones"><a href="#" class="mx-8">Canciones</a></button>
+          <button class="button rounded-lg h-12 text-center flex w-[100%] transition ease-in-out delay-50 border-red-50 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-600 duration-100 my-2" type="button" id="artistas"><a href="#"class="mx-8">Artistas</a></button>
+          <button class="button rounded-lg h-12 text-left flex w-[100%] transition ease-in-out delay-50 border-red-50 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-600 duration-100 my-2" type="button" id="reproduciendo"><a href="#" class="mx-8">Reproduciendo Ahora</a></button>
+        </div>
+        
+        <section class="h-40" id="space-settings"></section>
+          
+
+        </section>
+
+        <div class="bottom-0 flex-none relative my-16 mx-4">
+          <button class="button rounded-lg h-10 text-left  w-[100%] transition ease-in-out delay-50 border-red-50 hover:-translate-y-1 hover:scale-110 hover:bg-cyan-600 duration-300" type="button" id="ajustes"><a href="#" class="mx-8">Ajustes</a></button>
+        </div> 
+      </div>
+
+      
+        
+        <!-- Insertando la multipágina-->
+        <main class="overflow-y-auto flex-grow bg-[#ffffff00] backdrop-blur-md rounded-lg max-h-screen min-w-96 p-4"></main>
+      
+    </div>
+
+    <!--Pie de página ------------------------ -------------------- -->
+    <footer class="fixed inset bottom-1 z-0 flex justify-between left-0 w-full min-w-[900px] h-20 bg-[#673030a8] backdrop-blur-sm ">
+      <div class="flex items-center grow justify-between min-w-screen">
+
+      
+      <section id="song-info" class="w-1/3 place-items-center justify-between me-auto content-between md:flex bottom mr-0.5 ml-2 min-w-70 my-1 ">
+        <div class="flex items-center flex-row">
+          <img class="h-14 rounded-lg justify-between content-between"  src="./resources/assets/images/coverimage.jpg" alt="Album Cover">
+        <div class="content-normal ml-4 min-w-3 w-8/12 truncate justify-items-start" id="id-song">
+          <div id="song" class="truncate w-full text-[#ffffff]">Song title </div>
+          <div id="artist" class="truncate w-full text-[#ffffff]">Artist song</div>
+        </div>
+        </div>
+        
+      </section>
+
+      <section id="controls" class="items-center justify-between me-auto content-center col-span-12 bottom self-center w-2/5">
+        <div class="flex items-center justify-center space-x-4">
+
+          <button type="button" class="rounded-3xl bg-azul-raro backdrop-blur-sm hover:bg-azul-oscuro ml-4  w-8 h-8" id="atras">
+            <i class="fa-solid fa-backward mr-1"></i>
+          </button>
+          <button type="button" class="rounded-full content-center bg-azul-raro backdrop-blur-sm hover:bg-azul-oscuro w-10 h-10" id="play">
+            <i class="fa-solid fa-play ml-1"></i>
+          </button>
+          <button type="button" class="rounded-3xl bg-azul-raro backdrop-blur-sm hover:bg-azul-oscuro w-8 h-8 ml-2"  id="siguiente">
+            <i class="fa-solid fa-forward ml-1"></i>
+          </button>
+        </div>
+        <div>
+          <input type="range" value="0" class="bg-azul-raro backdrop-blur-sm  hover:bg-azul-oscuro w-full"/>
+        </div>
+      </section>
+      
+      <section id="volume" class="relative inset-0 w-1/4 justify-items-start items-center me-4 md:flex flex-row-reverse">
+        
+        <input id="volumen0" type="range" value="100" class="bg-slate-300 w-2/12"/>
+        <button type="button" class="rounded-lg bg-azul-raro hover:bg-azul-oscuro w-8 h-8 mx-2" id="volumen">
+          <i class="fa-solid fa-volume-high"></i>
+        </button>
+      
+      </section>
+    </div>
+    </footer>
+    
+  </body>
+</html>
