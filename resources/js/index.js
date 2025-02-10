@@ -21,6 +21,9 @@ static #mainMenu = async e => {
       case 'Inicio':
         const Inicio = Helpers.loadPage('./resources/html/home.html', 'main')
         break
+        case 'Fancy Music': 
+          const FancyMusic = Helpers.loadPage('./resources/html/home.html', 'main')
+          break
       case 'Canciones':
         const Canciones = Helpers.loadPage('./resources/html/songs.html', 'main')
         break
